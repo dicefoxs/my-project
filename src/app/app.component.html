@@ -33,47 +33,51 @@
           class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
         >
           <ul class="block lg:flex">
-            <li class="group">
-              <a
-                href="#home"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Beranda</a
+            <li class="group" (click)="scrollPoint1(point_1)">
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Beranda
+              </p>
             </li>
-            <li class="group">
-              <a
-                href="#about"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Tentang Saya</a
+            <li
+              class="group"
+              (click)="scrollPoint2(point_2)"
+              (scroll)="(false)"
+            >
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Tentang Saya
+              </p>
             </li>
-            <li class="group">
-              <a
-                href="#portfolio"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Portfolio</a
+            <li class="group" (click)="scrollPoint3(point_3)">
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Portfolio
+              </p>
             </li>
-            <li class="group">
-              <a
-                href="#clients"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Clients</a
+            <li class="group" (click)="scrollPoint4(point_4)">
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Clients
+              </p>
             </li>
-            <li class="group">
-              <a
-                href="#blog"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Blog</a
+            <li class="group" (click)="scrollPoint5(point_5)">
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Blog
+              </p>
             </li>
-            <li class="group">
-              <a
-                href="#contact"
-                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                >Contact</a
+            <li class="group" (click)="scrollPoint6(point_6)">
+              <p
+                class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:cursor-pointer"
               >
+                Contact
+              </p>
             </li>
           </ul>
         </nav>
@@ -84,7 +88,7 @@
 <!-- Header End -->
 
 <!-- Hero Section Start -->
-<section id="home" class="pt-36">
+<section id="home" class="pt-36" #point_1>
   <div class="container">
     <div class="flex flex-wrap">
       <div class="w-full self-center px-4 lg:w-1/2">
@@ -136,7 +140,7 @@
 <!-- Hero Section End -->
 
 <!-- About Section Start -->
-<section id="about" class="pt-36 pb-32">
+<section id="about" class="pt-36 pb-32" #point_2>
   <div class="container">
     <div class="flex flex-wrap">
       <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -245,7 +249,7 @@
 <!-- About Section End -->
 
 <!-- Portfolio Section Start -->
-<section id="portfolio" class="pt-36 pb-16 bg-slate-200">
+<section id="portfolio" class="pt-36 pb-16 bg-slate-200" #point_3>
   <div class="container">
     <div class="w-full px-4">
       <div class="max-w-xl mx-auto text-center mb-16">
@@ -332,7 +336,7 @@
 <!-- Portfolio Section End -->
 
 <!-- Client Section Start -->
-<section id="clients" class="pt-36 pb-32 bg-slate-800">
+<section id="clients" class="pt-36 pb-32 bg-slate-800" #point_4>
   <div class="container">
     <div class="w-full px-4">
       <div class="mx-auto text-center mb-16">
@@ -380,7 +384,7 @@
 <!-- Client Section End -->
 
 <!-- Blog Section Start -->
-<section id="blog" class="pt-36 pb-32 bg-slate-100">
+<section id="blog" class="pt-36 pb-32 bg-slate-100" #point_5>
   <div class="container">
     <div class="w-full px-4">
       <div class="max-w-xl mx-auto text-center mb-16">
@@ -483,7 +487,7 @@
 <!-- Blog Section End -->
 
 <!-- Contact Section Start -->
-<section id="contact" class="pt-36 pb-32">
+<section id="contact" class="pt-36 pb-32" #point_6>
   <div class="container">
     <div class="w-full px-4">
       <div class="max-w-xl mx-auto text-center mb-16">
